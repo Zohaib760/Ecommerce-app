@@ -177,7 +177,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: [
                                   InkWell(
                                       onTap: () {
-                                        Navigator.push(context, MaterialPageRoute(builder: (context)=>ProductScreen()));
+                                        Navigator.push(context, MaterialPageRoute(builder: (context)=>const ProductScreen()));
                                       },
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(10),
@@ -278,7 +278,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: GridView.builder(
                   itemCount: prdoucttitles.length,
                   shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   gridDelegate:const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   childAspectRatio: 0.6,
@@ -301,7 +301,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   children: [
                                     InkWell(
                                         onTap: () {
-                                          Navigator.push(context, MaterialPageRoute(builder: (context)=>ProductScreen()));
+                                          Navigator.push(context, MaterialPageRoute(builder: (context)=>const ProductScreen()));
                                         },
                                         child: ClipRRect(
                                           borderRadius: BorderRadius.circular(10),
