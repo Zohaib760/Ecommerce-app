@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/OTP_screen.dart';
-import 'package:flutter_application_1/recovery_screen.dart';
+import 'package:flutter_application_1/screens/recovery_screen.dart';
+
 
 class ForgotScreen extends StatefulWidget {
   const ForgotScreen({super.key});

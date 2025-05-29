@@ -1,5 +1,5 @@
 
-import 'package:flutter_application_1/navigation_screen.dart';
+import 'package:flutter_application_1/screens/navigation_screen.dart';
 
 // import 'splash_screen.dart';
 import 'package:flutter/material.dart';

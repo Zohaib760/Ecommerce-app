@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/recovery_screen.dart';
+import 'package:flutter_application_1/screens/recovery_screen.dart';
 // import 'package:sms_otp_auto_verify/sms_otp_auto_verify.dart';
 
 class OtpVerifyScreen extends StatefulWidget {

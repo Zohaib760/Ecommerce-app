@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:flutter_application_1/login_screen.dart';
+import 'package:flutter_application_1/screens/login_screen.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
 // ignore: must_be_immutable
