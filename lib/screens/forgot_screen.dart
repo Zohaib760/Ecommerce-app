@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/OTP_screen.dart';
+import 'package:flutter_application_1/screens/otp_screen.dart';
 import 'package:flutter_application_1/screens/recovery_screen.dart';
 
 

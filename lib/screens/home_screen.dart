@@ -152,7 +152,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 20,
               ),
               //List VIEW IS HERE---------------------------
-              Container(
+              SizedBox(
                 height: 180,
                 
                 child: ListView.builder(
@@ -246,7 +246,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     width: 10,
                                   ),
                                    Text(
-                                    '(' + prices[index] + ')',
+                                    '( ${prices[index]}  )',
                                     style:  const TextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.bold,
@@ -287,6 +287,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ), 
                   
                   itemBuilder: (context,index){
+                  // ignore: avoid_unnecessary_containers
                   return Container(
                          
                           child: Column(
@@ -357,7 +358,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     width: 10,
                                   ),
                                   Text(
-                                    '(' + prices[index] + ')',
+                                    '( ${ prices[index]} )',
                                     style: const TextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.bold),

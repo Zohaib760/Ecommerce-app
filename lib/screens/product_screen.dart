@@ -1,5 +1,6 @@
 import 'package:fan_carousel_image_slider/fan_carousel_image_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/widgets/product_detail_popup.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 class ProductScreen extends StatefulWidget {
@@ -93,19 +94,29 @@ class _ProductScreenState extends State<ProductScreen> {
              const SizedBox(
               height: 30,
               ),
-             Container(
-              height: 60,width: 60,
-              
-             decoration: BoxDecoration(
-              color: const Color(0x1f989897),
-              borderRadius: BorderRadius.circular(10)
-             ),
-             child: const Icon(Icons.shopping_cart, color: Colors.red,),
-             
-             )
+             Row(
+               children: [
+                const SizedBox(width: 13,),
+                 Container(
+                  height: 60,width: 60,
+                  
+                 decoration: BoxDecoration(
+                  color: const Color(0x1f989897),
+                  borderRadius: BorderRadius.circular(10)
+                 ),
+                 child: const Icon(Icons.shopping_cart, color: Colors.red,),
+                 
+                 ),
+                  const SizedBox(width: 15,),
+                  ProductDetailPopup(),
 
+               ],
+             ),
+            
+        
+             
+             
           ],
-          
         ),
       )),
     ));
