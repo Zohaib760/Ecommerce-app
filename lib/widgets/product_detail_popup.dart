@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screens/cart_screen.dart';
 import 'package:flutter_application_1/widgets/container_button_model.dart';
 
+// ignore: must_be_immutable
 class ProductDetailPopup extends StatelessWidget {
   // const ProductDetailPopup({super.key});
 
@@ -67,10 +68,10 @@ class ProductDetailPopup extends StatelessWidget {
                       ],),
                       const SizedBox(height: 20,),
                       Row(children: [
-                        for(var i=0;i<5;i++)
+                        for(var i=0;i<4;i++)
                       
                         Container(
-                          margin: const EdgeInsets.symmetric(horizontal: 15),
+                          margin: const EdgeInsets.symmetric(horizontal: 10),
                           height: 30,
                           width: 30,
                           decoration: BoxDecoration(
@@ -93,14 +94,14 @@ class ProductDetailPopup extends StatelessWidget {
                   
               ],)
               ,
-              const SizedBox(height: 30,),
+              const SizedBox(height: 20,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text("Total Payment ", style: isStyle,),
                   const Text("\$40.00 ", style: TextStyle(color: Color(0xffdb3032),fontSize: 18,fontWeight: FontWeight.bold))
                 ],),
-                const SizedBox(height: 30,),
+                const SizedBox(height: 20,),
                 InkWell(
                   onTap: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>const CartScreen()));

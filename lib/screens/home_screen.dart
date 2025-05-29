@@ -227,8 +227,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     child: Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the, industry's standard dummy text ever since the 1500s,",
                                     maxLines: 7,
                                     overflow: TextOverflow.ellipsis,
-                                    
-                                    ),
+                                  ),
                                   ),
                                    Row(
                                     children: [
@@ -307,7 +306,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         child: ClipRRect(
                                           borderRadius: BorderRadius.circular(10),
                                           child: Image.asset(imagelist[index],
-                                          height: 220,
+                                          height: 217,
                                            width: 180,
                                            fit: BoxFit.cover,
                                           ),
@@ -331,7 +330,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ),
                               ),
                               const SizedBox(
-                                height: 5,
+                                height: 3,
                               ),
                               Text(
                                 prdoucttitles[index],
@@ -340,7 +339,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     fontSize: 18, fontWeight: FontWeight.bold),
                               ),
                               const SizedBox(
-                                height: 5,
+                                height: 1,
                               ),
                               Row(
                                 children: [
@@ -355,25 +354,29 @@ class _HomeScreenState extends State<HomeScreen> {
                                         fontWeight: FontWeight.bold),
                                   ),
                                   const SizedBox(
-                                    width: 10,
+                                    width: 5,
                                   ),
                                   Text(
                                     '( ${ prices[index]} )',
                                     style: const TextStyle(
                                         fontSize: 18,
-                                        fontWeight: FontWeight.bold),
+                                        fontWeight: FontWeight.bold,
+                                        color: Color(0xffdb3032)
+                                        ),
                                   ),
                                 ],
                               ),
                             ],
                           ),
-                        );
-                }),
+              );
+              }
+              ),
               )
             ],
           ),
         ),
       ),
-    ));
+    )
+    );   
   }
 }

@@ -23,6 +23,14 @@ class _ProductScreenState extends State<ProductScreen> {
     ];
 
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Product Overview", style: TextStyle(fontWeight: FontWeight.bold),),
+        foregroundColor: Colors.black,
+        elevation: 0,
+        centerTitle: true,
+        toolbarHeight: 35,
+        backgroundColor: Colors.transparent,
+      ),
         body: SingleChildScrollView(
       child: SafeArea(
           child: Padding(
@@ -32,10 +40,10 @@ class _ProductScreenState extends State<ProductScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SizedBox(
-              height: 470,
+              height: 420,
               width: MediaQuery.of(context).size.width,
               child: FanCarouselImageSlider.sliderType1(
-                sliderHeight: 450,
+                sliderHeight: 400,
                 imagesLink: sampleimages,
                 isAssets: true,
                 autoPlay: true,
@@ -87,7 +95,7 @@ class _ProductScreenState extends State<ProductScreen> {
              const Align(
               alignment: Alignment.centerLeft,
                child: Text(
-                      "Cool windy weather is on its way.Send him out\nthe door in a jacket he want to wear. Warm\nZooper Hooded Jacket",
+                      "Cool windy weather is on its way.Send him out the door in a jacket he want to wear. Warm Zooper Hooded Jacket",
                       style: TextStyle(fontSize: 17),
                     ),
              ),
@@ -98,7 +106,7 @@ class _ProductScreenState extends State<ProductScreen> {
                children: [
                 const SizedBox(width: 13,),
                  Container(
-                  height: 60,width: 60,
+                  height: 60,width: 50,
                   
                  decoration: BoxDecoration(
                   color: const Color(0x1f989897),
