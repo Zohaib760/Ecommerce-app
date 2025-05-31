@@ -3,6 +3,7 @@ import 'package:flutter_application_1/screens/navigation_screen.dart';
 
 // import 'splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/splash_screen.dart';
 
 void main(){
   runApp(const MyApp());
@@ -23,7 +24,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primaryColor: Colors.pink),
       
-      home: const NavigationScreen(),
+      home: const SplashScreen(),
     ) ;
       
     
